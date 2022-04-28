@@ -18,6 +18,15 @@ const etaUtente = Number(prompt("Inserisci la tua eta'"));
 let costoBiglietto = chilometriUtente * 0.21;
 
 
+
 if (etaUtente < 18) {
     costoBiglietto = costoBiglietto - (costoBiglietto * 20 / 100);
+    console.log("Utente Under 18")
 }
+
+if (etaUtente > 65) {
+    costoBiglietto = costoBiglietto - (costoBiglietto * 40 / 100);
+    console.log("Utente Over 65")
+}
+
+console.log(costoBiglietto);
