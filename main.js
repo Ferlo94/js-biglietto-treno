@@ -19,5 +19,5 @@ let costoBiglietto = chilometriUtente * 0.21;
 
 
 if (etaUtente < 18) {
-    costoBiglietto = costoBiglietto * 20 / 100;
+    costoBiglietto = costoBiglietto - (costoBiglietto * 20 / 100);
 }
