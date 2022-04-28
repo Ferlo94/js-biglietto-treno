@@ -22,7 +22,6 @@ console.log(costoBiglietto);
 
 if (etaUtente < 18) {
     costoBiglietto = costoBiglietto - (costoBiglietto * 20 / 100);
-    costoBiglietto = costoBiglietto.toFixed(2);
     console.log("Utente Under 18");
 
 // } else if (etaUtente < 18 > 65) {
@@ -30,8 +29,7 @@ if (etaUtente < 18) {
 
 } else if (etaUtente > 65) {
     costoBiglietto = costoBiglietto - (costoBiglietto * 40 / 100);
-    costoBiglietto = costoBiglietto.toFixed(2);
     console.log("Utente Over 65");
 }
-
+costoBiglietto = costoBiglietto.toFixed(2);
 console.log(costoBiglietto);
